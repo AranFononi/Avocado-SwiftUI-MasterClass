@@ -50,8 +50,7 @@ struct RecipeCardView: View {
                 
                 // Cooking
                 RecipeCookingView(recipe: recipe)
-                    .font(.footnote)
-                    .foregroundStyle(.gray)
+                    
             } //: VStack
             .padding()
             .padding(.bottom, 12)

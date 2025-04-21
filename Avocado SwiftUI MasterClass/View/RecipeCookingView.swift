@@ -29,6 +29,8 @@ struct RecipeCookingView: View {
                 Text("Cooking: \(recipe.cooking)")
             } //: Cooking HStack
         }
+        .font(.footnote)
+        .foregroundStyle(.gray)
     }
 }
 
