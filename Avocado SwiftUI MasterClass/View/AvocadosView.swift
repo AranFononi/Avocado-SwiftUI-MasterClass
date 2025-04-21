@@ -8,8 +8,41 @@
 import SwiftUI
 
 struct AvocadosView: View {
+    // MARK: - Property
+    
     var body: some View {
-        Text("Avocados")
+        VStack {
+            Spacer()
+            
+            Image("avocado")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 240, height: 240, alignment: .center)
+                .shadow(color: .colorBlackTransparent, radius: 12, x: 0, y: 8)
+            
+            VStack {
+                Text("Avocados")
+                    .font(.system(size: 42, weight: .bold, design: .serif))
+                    .foregroundStyle(.white)
+                    .padding()
+                    .shadow(color: .colorBlackTransparent, radius: 4, x: 0, y: 4)
+                Text("Creamy, green, and full of nutrients! \nAvocado is a powerhouse ingredient at any meal. Enjoy these handpicked avocado recipes for breakfast, lunch, dinner & more!")
+                    .font(.system(.headline, design: .serif))
+                    .lineLimit(nil)
+                    .foregroundStyle(.colorGreenLight)
+                    .multilineTextAlignment(.center)
+                    .lineSpacing(8)
+            } //: VStack
+            .padding()
+            
+            Spacer()
+        } //: VStack
+        .background(
+            Image("background")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .ignoresSafeArea(.all)
+        )
     }
 }
 
