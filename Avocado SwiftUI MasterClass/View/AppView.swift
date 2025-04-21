@@ -26,8 +26,11 @@ struct AppView: View {
                 SettingsView()
             } //: Ripening Tab
             
+            
         } //: TabView
         .tint(.primary)
+        
+        
     }
 }
 
