@@ -21,18 +21,21 @@ struct ContentView: View {
                     } //: HStack
                 } //: Scroll
                 
+                // MARK: - Dishes
+                Text("Avocado Dishes")
+                    .modifier(TitleModifier())
+                DishesView()
+                
                 // MARK: - Footer
                 VStack(alignment: .center, spacing: 20) {
                     Text("All About Avocados")
-                        .font(.system(.title, design: .serif))
-                        .fontWeight(.bold)
-                        .foregroundStyle(.colorGreenAdaptive)
-                        .padding(8)
+                        .modifier(TitleModifier())
+                        
                     Text("Everything you wanted to know about avocados, but were too afraid to ask.")
                         .font(.system(.body, design: .serif))
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.gray)
-                        .padding(8)
+                        .frame(minHeight: 60)
                 } //: VStack
                 .frame(maxWidth: 640)
                 .padding()
@@ -40,6 +43,16 @@ struct ContentView: View {
             } //: VStack
         } //: ScrollView
         .ignoresSafeArea(edges: .all)
+    }
+}
+
+struct TitleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(.title, design: .serif))
+            .fontWeight(.bold)
+            .foregroundStyle(.colorGreenAdaptive)
+            .padding(8)
     }
 }
 
