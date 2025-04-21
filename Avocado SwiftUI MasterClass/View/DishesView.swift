@@ -10,27 +10,12 @@ import SwiftUI
 struct DishesView: View {
     var body: some View {
         HStack {
-            HStack {
-                Image("icon-toasts")
-                    .resizable()
-                    .frame(width: 42, height: 42, alignment: .center)
-                
-                Spacer()
-                
-                Text("Toasts")
-            } //: HStack
+            DishesRowView(image: "icon-toasts", text: "Toasts", isTextLeft: false)
             
             Image(systemName: "heart.circle")
             
-            HStack {
-                Text("Guacamole")
-                
-                Spacer()
-                
-                Image("icon-guacamole")
-                    .resizable()
-                    .frame(width: 42, height: 42, alignment: .center)
-            } //: HStack
+            DishesRowView(image: "icon-guacamole", text: "Guacamole", isTextLeft: true)
+            
         } //: HStack
         .font(.system(.callout, design: .serif))
         .foregroundStyle(.gray)
