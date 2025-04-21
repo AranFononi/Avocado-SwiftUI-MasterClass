@@ -29,6 +29,7 @@ struct AppView: View {
             
         } //: TabView
         .tint(.primary)
+        .tabViewStyle(.tabBarOnly)
         
         
     }

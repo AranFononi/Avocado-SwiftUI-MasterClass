@@ -44,7 +44,7 @@ struct AvocadosView: View {
             Image("background")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .ignoresSafeArea(.all)
+                .ignoresSafeArea(.container)
         )
         .onAppear {
             pulsateAnimation.toggle()
