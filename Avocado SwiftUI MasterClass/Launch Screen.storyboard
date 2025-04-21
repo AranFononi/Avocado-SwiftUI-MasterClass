@@ -15,17 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DmT-yf-1Da">
+                            <imageView verifyAmbiguity="ignoreSizes" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="852" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="vA0-EF-iwe">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <viewLayoutGuide key="safeArea" id="zEN-wc-pzt"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DmT-yf-1Da" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Hfy-a9-lPY"/>
-                            <constraint firstItem="DmT-yf-1Da" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="O4Y-zB-rss"/>
-                            <constraint firstAttribute="bottom" secondItem="DmT-yf-1Da" secondAttribute="bottom" id="lAE-T3-ATB"/>
-                            <constraint firstAttribute="trailing" secondItem="DmT-yf-1Da" secondAttribute="trailing" id="piI-Sg-zpf"/>
+                            <constraint firstItem="vA0-EF-iwe" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="0uN-4M-A98"/>
+                            <constraint firstAttribute="bottom" secondItem="vA0-EF-iwe" secondAttribute="bottom" id="MzL-Iu-laW"/>
+                            <constraint firstItem="zEN-wc-pzt" firstAttribute="trailing" secondItem="vA0-EF-iwe" secondAttribute="trailing" id="Slf-q6-Hwb"/>
+                            <constraint firstItem="vA0-EF-iwe" firstAttribute="leading" secondItem="zEN-wc-pzt" secondAttribute="leading" id="WlZ-gL-vVd"/>
                         </constraints>
                     </view>
                 </viewController>
