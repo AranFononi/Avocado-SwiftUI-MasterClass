@@ -7,7 +7,7 @@
 
 import Foundation
 
-let ripeningsData: [Ripening] = [
+let ripeningData: [Ripening] = [
     Ripening(
       image: "avocado-ripening-1",
       stage: "1",
