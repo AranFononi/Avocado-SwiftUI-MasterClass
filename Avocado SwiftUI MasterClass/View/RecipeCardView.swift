@@ -10,6 +10,8 @@ import SwiftUI
 struct RecipeCardView: View {
     // MARK: - Property
     var recipe: Recipe
+    var hapticImpact = UIImpactFeedbackGenerator(style: .light)
+    @State private var showModel: Bool = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -60,6 +62,13 @@ struct RecipeCardView: View {
         )
         .clipShape(.rect(cornerRadius: 12))
         .shadow(color: .colorBlackTransparent, radius: 8, x: 0, y: 0)
+        .onTapGesture {
+            hapticImpact.impactOccurred()
+            showModel = true
+        } //: Gesture
+        .sheet(isPresented: $showModel) {
+            RecipeDetailView(recipe: recipe)
+        } //: Sheet
     }
 }
 
