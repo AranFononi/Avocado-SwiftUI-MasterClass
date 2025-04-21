@@ -14,7 +14,7 @@ struct ContentView: View {
                 // MARK: - Header
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 0) {
-                        HeaderView()
+                        HeaderView(header: headersData[2])
                     } //: HStack
                 } //: Scroll
                 
